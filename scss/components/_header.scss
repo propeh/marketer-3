@@ -1,0 +1,118 @@
+header {
+  .top-header {
+    background: #343434;
+    @include screen-sm {
+      display: none;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+    .sns-links {
+      display: flex;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        color: #fff;
+        transition: 0.3s;
+        &:hover {
+          &.twitter {
+            background: #48b0d0;
+          }
+          &.instagram {
+            background: #582296;
+          }
+          &.facebook {
+            background: #223196;
+          }
+          &.youtube {
+            background: #e90c26;
+          }
+          &.skype {
+            background: #34c9ee;
+          }
+        }
+
+      }
+    }
+    .contact {
+      display: flex;
+      align-items: center;
+      p {
+        color: #ffffff;
+        + p {
+          margin-left: 30px;
+        }
+        i {
+          font-size: 22px;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+
+  .main-header {
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+    .logo {
+      a {
+        img {
+          height: 45px;
+        }
+      }
+    }
+    .gnb {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .gnb-menu {
+        display: flex;
+        @include screen-sm {
+          display: none;
+        }
+        li {
+          padding: 0 15px;
+          a {
+            font-size: 16px;
+            font-weight: 500;
+            color: #222;
+            &.home {
+              color: #3498db;
+            }
+          }
+        }
+      }
+      .btn-menu {
+        border: 1px solid #777;
+        border-radius: 4px;
+        padding: 6px;
+        cursor: pointer;
+        display: none;
+        .bar {
+          display: block;
+          width: 24px;
+          height: 1px;
+          background: #777;
+          + .bar {
+            margin-top: 6px;
+          }
+        }
+      }
+      @include screen-sm {
+        .btn-menu {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+

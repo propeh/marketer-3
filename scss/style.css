@@ -361,4 +361,93 @@ img {
   max-width: 100%;
   vertical-align: center; }
 
+body {
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif; }
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+header .top-header {
+  background: #343434; }
+  @media screen and (max-width: 768px) {
+    header .top-header {
+      display: none; } }
+  header .top-header .container {
+    display: flex;
+    justify-content: space-between; }
+  header .top-header .sns-links {
+    display: flex; }
+    header .top-header .sns-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      color: #fff;
+      transition: 0.3s; }
+      header .top-header .sns-links a:hover.twitter {
+        background: #48b0d0; }
+      header .top-header .sns-links a:hover.instagram {
+        background: #582296; }
+      header .top-header .sns-links a:hover.facebook {
+        background: #223196; }
+      header .top-header .sns-links a:hover.youtube {
+        background: #e90c26; }
+      header .top-header .sns-links a:hover.skype {
+        background: #34c9ee; }
+  header .top-header .contact {
+    display: flex;
+    align-items: center; }
+    header .top-header .contact p {
+      color: #ffffff; }
+      header .top-header .contact p + p {
+        margin-left: 30px; }
+      header .top-header .contact p i {
+        font-size: 22px;
+        margin-right: 6px; }
+header .main-header {
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0; }
+  header .main-header .container {
+    display: flex;
+    justify-content: space-between; }
+  header .main-header .logo a img {
+    height: 45px; }
+  header .main-header .gnb {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    header .main-header .gnb .gnb-menu {
+      display: flex; }
+      @media screen and (max-width: 768px) {
+        header .main-header .gnb .gnb-menu {
+          display: none; } }
+      header .main-header .gnb .gnb-menu li {
+        padding: 0 15px; }
+        header .main-header .gnb .gnb-menu li a {
+          font-size: 16px;
+          font-weight: 500;
+          color: #222; }
+          header .main-header .gnb .gnb-menu li a.home {
+            color: #3498db; }
+    header .main-header .gnb .btn-menu {
+      border: 1px solid #777;
+      border-radius: 4px;
+      padding: 6px;
+      cursor: pointer;
+      display: none; }
+      header .main-header .gnb .btn-menu .bar {
+        display: block;
+        width: 24px;
+        height: 1px;
+        background: #777; }
+        header .main-header .gnb .btn-menu .bar + .bar {
+          margin-top: 6px; }
+    @media screen and (max-width: 768px) {
+      header .main-header .gnb .btn-menu {
+        display: block; } }
+
 /*# sourceMappingURL=style.css.map */
