@@ -96,6 +96,9 @@ header {
         padding: 6px;
         cursor: pointer;
         display: none;
+        @include screen-sm {
+          display: block;
+        }
         .bar {
           display: block;
           width: 24px;
@@ -104,11 +107,6 @@ header {
           + .bar {
             margin-top: 6px;
           }
-        }
-      }
-      @include screen-sm {
-        .btn-menu {
-          display: block;
         }
       }
     }
