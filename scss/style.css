@@ -623,7 +623,7 @@ ul.grid {
     overflow: hidden; }
     @media screen and (max-width: 768px) {
       .latest-projects ul.grid > li .item {
-        margin: 10px 10px; } }
+        margin: 20px 50px; } }
     .latest-projects ul.grid > li .item .thumb {
       position: relative; }
       .latest-projects ul.grid > li .item .thumb:hover .screen {
@@ -693,5 +693,51 @@ ul.grid {
           font-style: italic;
           font-size: 16px;
           color: #bbb; }
+
+.happy-clients {
+  background: #3498db;
+  padding: 90px 0; }
+  .happy-clients .title-area {
+    text-align: center; }
+    .happy-clients .title-area h2 {
+      color: #fff; }
+    .happy-clients .title-area p {
+      color: #fff; }
+  .happy-clients .item {
+    margin-bottom: 20px; }
+    @media screen and (max-width: 768px) {
+      .happy-clients .item {
+        margin: 0 30px 20px 30px; } }
+    .happy-clients .item .comment {
+      padding: 30px;
+      background: #fff;
+      border-radius: 5px;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #7c8595;
+      margin-bottom: 20px;
+      position: relative; }
+      .happy-clients .item .comment::after {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 15px;
+        background: #fff;
+        transform: rotate(45deg);
+        bottom: -6px;
+        left: 65px; }
+    .happy-clients .item .client {
+      display: flex;
+      align-items: center; }
+      .happy-clients .item .client img {
+        border-radius: 50px;
+        border: 3px solid #fff;
+        margin: 0 20px 0 30px; }
+      .happy-clients .item .client .info {
+        color: #fff;
+        font-size: 16px;
+        line-height: 1.5; }
+        .happy-clients .item .client .info .role {
+          font-family: sans-serif; }
 
 /*# sourceMappingURL=style.css.map */

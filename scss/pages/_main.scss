@@ -233,7 +233,7 @@ ul.grid {
         border-radius: 6px;
         overflow: hidden;
         @include screen-sm {
-          margin: 10px 10px;
+          margin: 20px 50px;
         }
         .thumb {
           position: relative;
@@ -326,6 +326,64 @@ ul.grid {
           font-style: italic;
           font-size: 16px;
           color: #bbb;
+        }
+      }
+    }
+  }
+}
+
+// section happy-clients
+.happy-clients {
+  background: #3498db;
+  padding: 90px 0;
+  .title-area {
+    text-align: center;
+    h2 {
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+  }
+  .item {
+    margin-bottom: 20px;
+    @include screen-sm {
+      margin: 0 30px 20px 30px;
+    }
+    .comment {
+      padding: 30px;
+      background: #fff;
+      border-radius: 5px;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #7c8595;
+      margin-bottom: 20px;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 15px;
+        background: #fff;
+        transform: rotate(45deg);
+        bottom: -6px;
+        left: 65px;
+      }
+    }
+    .client {
+      display: flex;
+      align-items: center;
+      img {
+        border-radius: 50px;
+        border: 3px solid #fff;
+        margin: 0 20px 0 30px;
+      }
+      .info {
+        color: #fff;
+        font-size: 16px;
+        line-height: 1.5;
+        .role {
+          font-family: sans-serif;
         }
       }
     }
