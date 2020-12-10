@@ -740,4 +740,84 @@ ul.grid {
         .happy-clients .item .client .info .role {
           font-family: sans-serif; }
 
+.latest-news {
+  background: #fff;
+  padding: 90px 0; }
+  .latest-news .title-area {
+    text-align: center;
+    margin-bottom: 80px; }
+    .latest-news .title-area h2 {
+      color: #2F362F; }
+    .latest-news .title-area p {
+      color: #7c8595; }
+  .latest-news .item {
+    border-radius: 6px;
+    overflow: hidden;
+    border-bottom: 2px solid #d0d3d9; }
+    @media screen and (max-width: 768px) {
+      .latest-news .item {
+        margin: 20px 30px; } }
+    .latest-news .item .thumb {
+      position: relative; }
+      .latest-news .item .thumb:hover .screen {
+        opacity: 1; }
+      .latest-news .item .thumb a {
+        display: flex; }
+        .latest-news .item .thumb a img {
+          width: 100%; }
+      .latest-news .item .thumb .screen {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.4);
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: 0.4s; }
+        .latest-news .item .thumb .screen i {
+          font-size: 40px;
+          color: #fff; }
+    .latest-news .item .desc {
+      padding: 20px 30px 30px 30px;
+      background: #f6f7f8; }
+      .latest-news .item .desc h3 {
+        margin-bottom: 10px; }
+        .latest-news .item .desc h3 a {
+          font-size: 20px;
+          font-weight: 500;
+          color: #454545; }
+          .latest-news .item .desc h3 a:hover {
+            color: #3498db; }
+      .latest-news .item .desc .reporter {
+        margin-bottom: 20px;
+        display: flex; }
+        .latest-news .item .desc .reporter .name i {
+          font-size: 16px;
+          color: #333;
+          margin-right: 5px; }
+        .latest-news .item .desc .reporter .name a {
+          font-size: 14px;
+          font-style: italic;
+          color: #858585; }
+          .latest-news .item .desc .reporter .name a:hover {
+            color: #3498db; }
+        .latest-news .item .desc .reporter .blog {
+          margin-left: 10px; }
+          .latest-news .item .desc .reporter .blog i {
+            font-size: 16px;
+            color: #333;
+            margin-right: 5px; }
+          .latest-news .item .desc .reporter .blog a {
+            font-size: 14px;
+            color: #7c8595; }
+            .latest-news .item .desc .reporter .blog a:hover {
+              color: #3498db; }
+      .latest-news .item .desc .content {
+        font-size: 15px;
+        color: #7c8595;
+        line-height: 1.5; }
+
 /*# sourceMappingURL=style.css.map */
