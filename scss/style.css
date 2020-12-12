@@ -623,7 +623,8 @@ ul.grid {
     overflow: hidden; }
     @media screen and (max-width: 768px) {
       .latest-projects ul.grid > li .item {
-        margin: 20px 50px; } }
+        margin: 20px auto;
+        width: 70vw; } }
     .latest-projects ul.grid > li .item .thumb {
       position: relative; }
       .latest-projects ul.grid > li .item .thumb:hover .screen {
@@ -756,7 +757,8 @@ ul.grid {
     border-bottom: 2px solid #d0d3d9; }
     @media screen and (max-width: 768px) {
       .latest-news .item {
-        margin: 20px 30px; } }
+        margin: 20px auto;
+        width: 70vw; } }
     .latest-news .item .thumb {
       position: relative; }
       .latest-news .item .thumb:hover .screen {

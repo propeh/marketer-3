@@ -233,7 +233,8 @@ ul.grid {
         border-radius: 6px;
         overflow: hidden;
         @include screen-sm {
-          margin: 20px 50px;
+          margin: 20px auto;
+          width: 70vw;
         }
         .thumb {
           position: relative;
@@ -409,7 +410,8 @@ ul.grid {
     overflow: hidden;
     border-bottom: 2px solid #d0d3d9;
     @include screen-sm {
-      margin: 20px 30px;
+      margin: 20px auto;
+      width: 70vw;
     }
     .thumb {
       position: relative;
