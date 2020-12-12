@@ -28,7 +28,7 @@ const marketer = {
     faq : function () {
         $('.faq li').on('click', function () {
             const faqIndex = $(this).index();
-            $('.faq li').eq(faqIndex).addClass('is-active').siblings().removeclass('is-active');
+            $('.faq li').eq(faqIndex).addClass('is-active').siblings().removeClass('is-active');
         })
     }
 }
