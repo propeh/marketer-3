@@ -9,6 +9,7 @@ const exam = {
 
     init : function () {
         exam.handlerNav();
+        exam.visualSlide();
         exam.tab();
         exam.dropdown();
         exam.getScroll();
@@ -22,6 +23,15 @@ const exam = {
             const offsetTop = $('.section').eq(navIndex).offset().top;
             $('html, body').animate({scrollTop : offsetTop - 65}, 600, 'easeOutQuad');
         })
+    },
+
+    visualSlide : function () {
+        $('.slide').slick({
+            autoplay : true,
+            arrows : false,
+            dots : true,
+            pauseOnHover : false,
+        });
     },
 
     tab : function () {
@@ -49,9 +59,9 @@ const exam = {
         $(window).on('scroll', function () {
             const scrollTop = $(window).scrollTop();
             if(scrollTop > 600) {
-                $('html').addClass('show-header');
+                $('html').addClass('hide-header');
             } else  {
-                $('html').removeClass('show-header');
+                $('html').removeClass('hide-header');
             }
         })
     },

@@ -6,11 +6,11 @@
   box-sizing: border-box;
 }
 #wrap {
-  padding-top: 65px;
+  //padding-top: 65px;
 }
 .header {
   height: 75px;
-  background: #fff;
+  background: transparent;
   position: fixed;
   top: 0;
   right: 0;
@@ -22,15 +22,22 @@
   align-items: center;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  transform: translateY(-100%);
-  transition: 0.4s;
-  .show-header & {
-    transform: none;
+  transform: none;
+  .hide-header & {
+    //transform: translateY(-100%);
+    transition: 0.4s;
+    background: #fff;
+    nav .nav-item {
+      color: #333333;
+    }
+    .logo {
+      color: #333;
+    }
   }
   .logo {
     font-size: 26px;
     text-transform: uppercase;
-    color: #333;
+    color: #fff;
     font-weight: bold;
   }
   nav {
@@ -41,11 +48,54 @@
       height: 65px;
       padding: 0 20px;
       margin: 0 10px;
+      color: #fff;
       text-transform: uppercase;
       cursor: pointer;
       border-bottom: 3px solid transparent;
       &.is-active, &:hover {
         border-bottom: 3px solid #08c;
+      }
+    }
+  }
+}
+
+.section-visual {
+  .slide {
+    position: relative;
+    .item {
+      height: 100vh;
+      background: 50% 50% / cover no-repeat;
+      &.item1 {
+        background-image: url('https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80');
+      }
+      &.item2 {
+        background-image: url('https://images.unsplash.com/photo-1607945964157-bd6552db01af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80');
+      }
+      &.item3 {
+        background-image: url('https://images.unsplash.com/photo-1602525662485-744a6e2bf33a?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80');
+      }
+    }
+    .slick-dots {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 50px;
+      display: flex;
+      justify-content: center;
+      li {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: transparent;
+        border : 1px solid #fff;
+        margin: 0 6px;
+        cursor: pointer;
+        &.slick-active {
+          background: #fff;
+        }
+      }
+      button {
+        display: none;
       }
     }
   }
