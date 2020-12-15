@@ -72,7 +72,8 @@
       background: transparent;
       border: 1px solid #fff;
       margin: 0 6px;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: 0.4s; }
       .section-visual .slide .slick-dots li.slick-active {
         background: #fff; }
     .section-visual .slide .slick-dots button {
